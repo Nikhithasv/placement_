@@ -1,33 +1,24 @@
-import java.util.Scanner;
-
-public class RemoveDuplicatesInPlace {
-
+import java.util.*;
+class HelloWorld {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("Enter the size of the array:");
-        int size = sc.nextInt();
-
-        int[] nums = new int[size];
-
-        System.out.println("Enter the elements of the sorted array:");
-        for (int i = 0; i < size; i++) {
-            nums[i] = sc.nextInt();
+        
+        //int [] a={22,23,23};
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int [] a=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            a[i]=s.nextInt();
         }
-
-        if (size == 0) {
-            System.out.println("0");
-        } else {
-            int count = 1; 
-            for (int i = 1; i < size; i++) {
-                if (nums[i] != nums[i - 1]) {
-                    nums[count] = nums[i];
-                   count++;
-                }
+        int count=1;
+        for(int i=0;i<a.length-1;i++)
+        {
+            
+            if(a[i]!=a[i+1])
+            {
+                count++;
             }
-
-            System.out.println(count);
-           
         }
+        System.out.print("count:"+count);
     }
 }
