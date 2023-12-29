@@ -1,13 +1,10 @@
 
 public class Main {
     public static void main(String[] args) {
-        // Creating an Employee object
-        Employee employeeObj = new Employee("John Doe", 25, "123-456-7890", "123 Main St", 50000, "Software Development");
+       
+        Employee employeeObj = new Employee("abc", 25, "1234567890", "jvvyuhjn", 50000, "Software Development");
+        Manager managerObj = new Manager("efg", 30, "925489657", "njhj", 80000, "HR");
 
-        // Creating a Manager object
-        Manager managerObj = new Manager("Jane Smith", 30, "987-654-3210", "456 Oak St", 80000, "HR");
-
-        // Printing details
         System.out.println("Employee Details:");
         System.out.println("Name: " + employeeObj.name);
         System.out.println("Age: " + employeeObj.age);
